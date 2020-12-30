@@ -8,14 +8,17 @@ import {AvatarModule} from 'primeng/avatar';
 import {AvatarGroupModule} from 'primeng/avatargroup';
 import {ButtonModule} from 'primeng/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
+import { HttpClientModule } from '@angular/common/http';
+import { PagesComponent } from './pages/pages.component';
+import {SkeletonModule} from 'primeng/skeleton';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [
     SellerPortalComponent,
     SidebarComponent,
     SellerHomeComponent,
+    PagesComponent,
   ],
   imports: [
     CommonModule,
@@ -24,7 +27,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AvatarGroupModule,
     ButtonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    SkeletonModule,
+    CardModule
   ],
   bootstrap: [SellerPortalComponent]
 })

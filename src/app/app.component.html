@@ -1,4 +1,5 @@
 <div class="navigation">
+  <p-toast></p-toast>
   <div class="nav-left">
     <h3>Shop Live</h3>
   </div>
@@ -12,4 +13,4 @@
     <img (click)="sellerPortal()" *ngIf="user?.id" [src]="user.response.picture.data.url" />
   </div>
 </div>
-<router-outlet></router-outlet>
+<router-outlet style="max-height: 90vh;"></router-outlet>

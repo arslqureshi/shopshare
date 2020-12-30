@@ -1,0 +1,36 @@
+<div class="p-grid">
+    <div class="p-col-3">
+        <app-sidebar link="pages"></app-sidebar>
+    </div>
+    <div class="p-col-9 main-section">
+        <div class="loading" *ngIf="isLoading">
+            <p-skeleton styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton width="10rem" styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton width="5rem" styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton height="2rem" styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton styleClass="p-mb-2" width="10rem" height="4rem"></p-skeleton>
+            <p-skeleton height="2rem" styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton height="2rem" styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton width="10rem" styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton width="5rem" styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton styleClass="p-mb-2" width="10rem" height="4rem"></p-skeleton>
+            <p-skeleton width="10rem" styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton width="5rem" styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton styleClass="p-mb-2"></p-skeleton>
+            <p-skeleton styleClass="p-mb-2"></p-skeleton>
+        </div>
+        <div *ngIf="!isLoading">
+            <h2>List of your Facebook Pages</h2>
+            <div class="card">
+                <h3>Page Name</h3>
+                <p>Page Category</p>
+                <div class="actions">
+                    <button pButton pRipple type="button" label="Add page" class="p-button-parimary"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

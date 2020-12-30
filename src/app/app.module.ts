@@ -1,13 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
-import {
-  FacebookLoginProvider
-} from 'angularx-social-login';
+import {FacebookLoginProvider} from 'angularx-social-login';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './componets/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import {ToastModule} from 'primeng/toast';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -19,6 +21,9 @@ import { HomeComponent } from './componets/home/home.component';
     BrowserModule,
     AppRoutingModule,
     SocialLoginModule,
+    HttpClientModule,
+    ToastModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {

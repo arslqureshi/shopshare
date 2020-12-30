@@ -5,7 +5,7 @@
         <img [src]="user.response.picture.data.url"/>
     </div>
     <div class="links">
-        <button pButton pRipple type="button" label="dashboard" [class.p-button-active]="link=='home'" class="p-button-secondary"></button>
-        <button pButton pRipple type="button" label="pages" [class.p-button-active]="link=='pages'" class="p-button-secondary"></button>
+        <button routerLink="/seller-portal" pButton pRipple type="button" label="dashboard" [class.p-button-active]="link=='home'" class="p-button-secondary"></button>
+        <button routerLink="/seller-portal/pages" pButton pRipple type="button" label="pages" [class.p-button-active]="link=='pages'" class="p-button-secondary"></button>
     </div>
 </div>
