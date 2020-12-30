@@ -1,0 +1,46 @@
+.sidebar {
+    width: 100%;
+    height: 90vh;
+    background-color: #2d323e;
+    color: white;
+    .user-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        background-color: #1e2129;
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        img {
+            margin-top: 30px;
+            border-radius: 100%;
+            width: 75px;
+            height: 75px;
+        }
+    }
+    .links {
+        padding-bottom: 5px;
+        button {
+            width: 100%;
+        }
+        .p-button-secondary{
+            background-color: #2d323e !important;
+            border: none !important;
+        }
+        .p-button-active {
+            background-color: #607d8b !important;
+            border: #607d8b !important;
+        }
+    }
+}

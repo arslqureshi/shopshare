@@ -1,0 +1,32 @@
+.navigation {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    .nav-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+            padding-left: 5px;
+            cursor: pointer;
+        }
+        img {
+            padding-left: 5px;
+            border-radius: 100%;
+        }
+    }
+    .nav-left {
+        h3{
+            cursor: pointer;
+        }
+    }
+    .nav-center {
+        h1{
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<div class="sidebar">
+    <div class="user-data">
+        <h3>{{user.name}}</h3>
+        <p>{{user.email}}</p>
+        <img [src]="user.response.picture.data.url"/>
+    </div>
+    <div class="links">
+        <button pButton pRipple type="button" label="dashboard" [class.p-button-active]="link=='home'" class="p-button-secondary"></button>
+        <button pButton pRipple type="button" label="pages" [class.p-button-active]="link=='pages'" class="p-button-secondary"></button>
+    </div>
+</div>
