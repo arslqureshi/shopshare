@@ -24,9 +24,9 @@
         </div>
         <div *ngIf="!isLoading">
             <h2>List of your Facebook Pages</h2>
-            <div class="card">
-                <h3>Page Name</h3>
-                <p>Page Category</p>
+            <div class="card" *ngFor="let data of response.data">
+                <h3>{{data.name}}</h3>
+                <p>{{data.category}}</p>
                 <div class="actions">
                     <button pButton pRipple type="button" label="Add page" class="p-button-parimary"></button>
                 </div>

@@ -14,6 +14,7 @@ export class PagesComponent implements OnInit {
   ngOnInit(): void {
     this.api.getPages().subscribe(data => {
       console.log(data);
+      this.response = data;
       this.isLoading = false;
     })
   }

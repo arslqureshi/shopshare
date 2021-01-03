@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SocialAuthService } from "angularx-social-login";
-import { FacebookLoginProvider, GoogleLoginProvider } from "angularx-social-login";
+import { FacebookLoginProvider } from "angularx-social-login";
 import {LoginService} from './services/login.service';
 import { Router } from '@angular/router';
 import {MessageService} from 'primeng/api';
@@ -30,8 +30,6 @@ export class AppComponent implements OnInit{
   ) { }
 
   signInWithFB(): void {
-    // this.toast.add({severity:'success', summary:'Service Message', detail:'Via MessageService'});
-
    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID).then(Response => {
      console.log(Response);
      if(Response?.id) {

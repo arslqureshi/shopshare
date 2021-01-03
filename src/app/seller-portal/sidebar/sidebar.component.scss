@@ -1,6 +1,6 @@
 .sidebar {
     width: 100%;
-    height: 100%;
+    height: 103%;
     background-color: #2d323e;
     color: white;
     .user-data {
@@ -41,6 +41,9 @@
         .p-button-active {
             background-color: #607d8b !important;
             border: #607d8b !important;
+        }
+        p {
+            padding-left: 10px;
         }
     }
 }
